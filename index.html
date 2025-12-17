@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kyras Pralinenwelt</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #121212;
+      --card-bg: #1e1e1e;
+      --accent: #ff9f1c;
+      --accent-soft: #2a2a2a;
+      --text: #f1f1f1;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 2.5rem;
+      background: linear-gradient(135deg, #ff8c00, #ffb347);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 3rem;
+    }
+
+    .food-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .food-card {
+      background: linear-gradient(180deg, #1e1e1e, #181818);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .food-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
+    }
+
+    .food-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .food-content {
+      padding: 1.25rem 1.4rem 1.6rem;
+    }
+
+    .food-content h2 {
+      margin: 0 0 0.2rem;
+      font-size: 1.4rem;
+    }
+
+    .rating {
+      font-size: 1.1rem;
+      margin-bottom: 0.4rem;
+      letter-spacing: 0.1rem;
+    }
+
+    .michelin {
+      color: #ff3b3b;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .food-content p {
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem 2rem;
+      font-size: 0.85rem;
+      opacity: 0.7;
+    }
+
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pralines</h1>
+    <p>Mmmh fein</p>
+  </header>
+
+  <main>
+    <section class="food-grid">
+
+      <div class="food-card">
+        <img src="images/Am.png" alt="Amélie" />
+        <div class="food-content">
+          <h2>Amélie</h2>
+          <p>Amélie Bameli</p>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="images/sil.png" alt="Silas" />
+        <div class="food-content">
+          <h2>Silas</h2>
+          <p>Silas chillas</p>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="images/ky.png" alt="Kyra" />
+        <div class="food-content">
+          <h2>Kyra</h2>
+          <p>Mammi bami</p>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="images/raf.png" alt="Raffi" />
+        <div class="food-content">
+          <h2>Raffi</h2>
+          <p>Papi lappi</p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    Made with ❤️ 
+  </footer>
+
+</body>
+</html>
